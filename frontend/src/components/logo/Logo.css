@@ -1,0 +1,8 @@
+.logo img{
+    height: 40vmin;
+    max-width: 600px;
+}
+.logo{
+   display: flex;
+   justify-content: center;
+}

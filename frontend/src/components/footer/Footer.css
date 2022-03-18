@@ -1,0 +1,20 @@
+.Footer{
+  
+     color: #105361;
+     padding: 25px; 
+     font-size: 15px;
+     font-weight: 650;
+     display: flex;
+     justify-content: space-evenly;
+     row-gap: 15px;
+}
+.Social{
+    font-size: 35px;
+    display: flex;
+    gap: 25px;
+    padding-top: 50px;
+}
+.container{
+  width: 80px;
+  text-align: center;
+}

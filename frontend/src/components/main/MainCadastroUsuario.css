@@ -1,0 +1,22 @@
+.MainCadastroUsuario{
+    background-image:url(../../assets//svg/FundoContato.svg);
+    background-size:cover;
+    background-image: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.DivFormulario{
+    background-color: rgba(0, 0, 0, 0.52);
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    color: #ec7e2f;
+}
+.DivFormulario Button{
+  background-color: #ec7e2f;
+}
+.DivFormulario Button:hover{
+    background-color: #105361;
+}

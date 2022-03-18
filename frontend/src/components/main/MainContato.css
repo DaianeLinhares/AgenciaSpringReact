@@ -1,0 +1,28 @@
+.MainContato{
+    background-image:url(../../assets//svg/FundoContato.svg);
+    background-size:cover;
+    background-image: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.Div{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: #ec7e2f;
+    font-size: 15px;
+}
+.Formulario{
+   text-align: center;
+    max-width: 50%;
+}
+.Formulario Button{
+    background-color: #ec7e2f;
+    
+}
+.Formulario Button:hover{
+    
+    background-color: #105361;
+}

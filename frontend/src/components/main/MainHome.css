@@ -1,0 +1,10 @@
+.MainHome{
+    padding-bottom: 80px;
+    background-image: radial-gradient(circle, #f5d60f, #f6bb00, #f49f00, #ee8400, #e66811);
+}
+.MainHome h3{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #f5d60f;
+}

@@ -1,0 +1,15 @@
+.navbar{
+    font-size: 20px;
+   justify-content: center;
+   border-bottom:  0.4px solid #FFF;
+}
+.navbar a{
+    text-decoration: none;
+    color: #e66811;
+}
+.navbar a:hover{
+    color: #601901;
+}
+.navbar-toggler{
+    color: #e66811;
+}

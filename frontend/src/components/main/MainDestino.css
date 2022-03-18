@@ -1,0 +1,14 @@
+.MainDestino{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    row-gap: 60px;
+    margin-bottom: 80px;
+    margin: 20px;
+    background-image: radial-gradient(circle, #f5d60f, #f6bb00, #f49f00, #ee8400, #e66811);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
