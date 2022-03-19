@@ -8,16 +8,18 @@
     justify-content: center;
 }
 .Div{
-    padding: 15px;
+    padding-top: 15px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.541);
     color: #ec7e2f;
     font-size: 15px;
+    align-items: center;
 }
 .Formulario{
    text-align: center;
     max-width: 50%;
 }
+
 .Formulario Button{
     background-color: #ec7e2f;
     

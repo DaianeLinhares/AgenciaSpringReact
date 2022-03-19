@@ -12,7 +12,6 @@ const UseState = () => {
     <section className="MainContato">
       <div className="Div">
         <h1>Precisa falar conosco</h1>
-        <h2>Você pode enviar uma mensagem</h2>
         <form className="Formulario">
           <div className="form-group">
             <label htmlFor="formGroupExampleInput">Nome</label>
@@ -26,7 +25,7 @@ const UseState = () => {
           </div>
           <div className="form-group">
             <label htmlFor="formGroupExampleInput2">Mensagem</label>
-            <textarea name="" id="" cols="30" rows="10" value={mensagem}
+            <textarea name="" id="" cols="20" rows="10" value={mensagem}
               onChange={e => setMensagem(e.target.value)}></textarea>
           </div>
           <div>
