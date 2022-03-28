@@ -17,7 +17,7 @@ function Cards(props) {
         <Card.Text>
           <h2>{props.textopromocao} {props.valorpromocao}</h2>
         </Card.Text>
-        <Button variant="primary">Adicionar ao carrinho</Button>
+        <Button variant="primary">Detalhes</Button>
       </Card.Body>
     </Card>
   );

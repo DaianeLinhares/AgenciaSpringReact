@@ -11,7 +11,9 @@ function MainPromocoes() {
             <div className="MainPromocoes">
                 <Card foto={Portugal}
                     titulo="Portugal"
-                    texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus purus sit amet ligula cursus."
+                    texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    
+                    Sed faucibus purus sit amet ligula cursus."
                     valor={3.587}
                     textopromocao="R$"
                     valorpromocao={1.905} />

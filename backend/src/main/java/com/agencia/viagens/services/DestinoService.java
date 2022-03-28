@@ -1,6 +1,7 @@
 package com.agencia.viagens.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,16 +15,28 @@ public class DestinoService {
 
 	@Autowired
 	private DestinoRepository repository;
-	
+
 	@Transactional(readOnly = true)
-	public List<Destino> findAll(){
-		List<Destino> result = repository.findAll();
-		return result;
+	public List<Destino> findAll() {
+		List<Destino> resultado = repository.findAll();
+		return resultado;
 	}
-	
+
 	@Transactional(readOnly = true)
-	public Destino findById(Long id){
-		Destino result = repository.findById(id).get();
-		return result;
+	public Optional<Destino> findById(Long id) {
+		return repository.findById(id);
+	}
+
+	@Transactional(readOnly = true)
+	public Destino create(Destino destino) {
+		return repository.save(destino);
+	}
+
+	public Destino update(Destino destino) {
+		return repository.saveAndFlush(destino);
+	}
+
+	public void delete(Long id) {
+		repository.deleteById(id);
 	}
 }

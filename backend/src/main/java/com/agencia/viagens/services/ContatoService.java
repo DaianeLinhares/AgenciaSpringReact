@@ -1,19 +1,13 @@
 package com.agencia.viagens.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.agencia.viagens.entities.Cliente;
 import com.agencia.viagens.entities.Contato;
-import com.agencia.viagens.entities.Destino;
 import com.agencia.viagens.repositories.ContatoRepository;
 
 @Service
@@ -22,14 +16,27 @@ public class ContatoService {
 	@Autowired
 	private ContatoRepository repository;
 
-	@PostMapping
-	public Contato saveContato(@RequestBody Contato contato) {
-		return contato = repository.save(contato);
+	@Transactional(readOnly = true)
+	public List<Contato> findAll() {
+		List<Contato> resultado = repository.findAll();
+		return resultado;
 	}
 
 	@Transactional(readOnly = true)
-	public List<Contato> findAll() {
-		List<Contato> result = repository.findAll();
-		return result;
+	public Optional<Contato> findById(Long id) {
+		return repository.findById(id);
+	}
+
+	@Transactional(readOnly = true)
+	public Contato create(Contato contato) {
+		return repository.save(contato);
+	}
+	
+	public Contato update(Contato contato) {
+		return repository.saveAndFlush(contato);
+	}
+
+	public void delete(Long id) {
+		repository.deleteById(id);
 	}
 }

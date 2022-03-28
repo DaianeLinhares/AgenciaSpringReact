@@ -17,18 +17,20 @@ public class Cliente {
 	private String email;
 	private String senha;
 	private String endereco;
+	private String cidade;
 	private String estado;
 
 	public Cliente() {
 
 	}
 
-	public Cliente(Long id, String nome, String email, String senha, String endereco, String estado) {
+	public Cliente(Long id, String nome, String email, String senha, String endereco, String cidade, String estado) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 		this.endereco = endereco;
+		this.cidade = cidade;
 		this.estado = estado;
 	}
 
@@ -70,6 +72,14 @@ public class Cliente {
 
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
+	}
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
 	}
 
 	public String getEstado() {

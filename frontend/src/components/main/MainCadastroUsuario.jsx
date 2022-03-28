@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import "./MainCadastroUsuario.css";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import api from "../api";
 
 const UseState = () => {
-    const [nome, setNome] = useState("Digite seu nome")
-    const [email, setEmail] = useState("Digite seu E-mail")
-    const [senha, setSenha] = useState("")
-    const [endereco, setEndereco] = useState("Digite seu endereco")
-    const [cidade, setCidade] = useState("Digite sua cidade")
-    const [estado, setEstado] = useState("Digite seu estado!")
+    const [nome] = useRef()
+    const [email] = useRef()
+    const [senha] = useRef()
+    const [endereco] = useRef()
+    const [cidade] = useRef()
+    const [estado] = useRef()
 
     return (
         <section className="MainCadastroUsuario">
