@@ -17,7 +17,7 @@ function MainDestino() {
 
     return (
         <section className="MainDestino" key={destino.id}>
-            {destino.map((produto) => (
+            {destino.map((destino) => (
                 <Card foto={destino.imagem}
                     titulo={destino.nomeDestino}
                     texto={destino.descricao}
