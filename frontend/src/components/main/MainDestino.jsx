@@ -16,7 +16,7 @@ function MainDestino() {
     }, []);
 
     return (
-        <section className="MainDestino" key={destino.id}>
+        <section className="MainDestino" >
             {destino.map((destino) => (
                 <Card foto={destino.imagem}
                     titulo={destino.nomeDestino}

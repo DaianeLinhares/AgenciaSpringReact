@@ -12,12 +12,12 @@ function Cards(props) {
           {props.texto}
         </Card.Text>
         <Card.Text>
-          <h5>{props.textovalor} {props.valor}</h5>
+          <h5> {props.valor}</h5>
         </Card.Text>
         <Card.Text>
-          <h2>{props.textopromocao} {props.valorpromocao}</h2>
+          <h2> {props.valorpromocao}</h2>
         </Card.Text>
-        <Button variant="primary">Detalhes</Button>
+        <Button variant="primary" type="submit">Detalhes</Button>
       </Card.Body>
     </Card>
   );

@@ -16,7 +16,7 @@ function NavBar() {
                             <Link to='/'><a href class="nav-link active">Home</a></Link>
                         </li>
                         <li>
-                            <Link to='/Destino'><a href class="nav-link active">Destino</a></Link>
+                            <Link to='/Destino'><a href class="nav-link active">Destinos</a></Link>
                         </li>
                         <li>
                             <Link to='/Promocoes'><a href class="nav-link active">Promoções</a></Link>
