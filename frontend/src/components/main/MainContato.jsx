@@ -15,6 +15,8 @@ const Formulario = () => {
         emailContato: emailContato.current.value,
         mensagem: mensagem.current.value,
     }).then((res) => console.log(res.data)).catch((err) => console.log(err))
+    window.alert("Mensagem enviada!")
+    window.location.reload();
 }
   return (
     
