@@ -13,7 +13,7 @@ const UseState = () => {
 
     function enviarDados(event) {
         event.preventDefault()
-        api.post('/clientes', {
+        api.put('/clientes/', {
             nome: nome.current.value,
             email: email.current.value,
             senha: senha.current.value,

@@ -27,7 +27,6 @@ public class ContatoService {
 		return repository.findById(id);
 	}
 
-	@Transactional(readOnly = true)
 	public Contato create(Contato contato) {
 		return repository.save(contato);
 	}
