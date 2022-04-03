@@ -19,7 +19,6 @@ import com.agencia.viagens.services.ContatoService;
 
 @RestController
 @RequestMapping(value = "/contatos")
-@CrossOrigin(origins = "http://localhost:3000")
 public class ContatoResource {
 
 	@Autowired

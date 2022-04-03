@@ -19,7 +19,6 @@ import com.agencia.viagens.services.DestinoService;
 
 @RestController
 @RequestMapping(value = "/destinos")
-@CrossOrigin(origins = "http://localhost:3000")
 public class DestinoResource {
 
 	@Autowired

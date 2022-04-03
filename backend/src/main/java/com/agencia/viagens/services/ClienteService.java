@@ -27,7 +27,6 @@ public class ClienteService {
 		return repository.findById(id);
 	}
 
-	@Transactional(readOnly = true)
 	public Cliente create(Cliente cliente) {
 		return repository.save(cliente);
 	}
