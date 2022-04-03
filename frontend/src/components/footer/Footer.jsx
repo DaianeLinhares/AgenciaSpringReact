@@ -7,7 +7,8 @@ function Footer() {
       <footer className="Footer">
          <div className='container'>
             <p> &copy; Daiane Linhares Ferreia </p>
-            <AiFillLinkedin />
+            <AiFillLinkedin/>
+            
          </div>
       </footer>
    );

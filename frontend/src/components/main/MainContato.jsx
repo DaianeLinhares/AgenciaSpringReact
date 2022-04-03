@@ -8,7 +8,6 @@ const Formulario = () => {
   const emailContato = useRef()
   const mensagem = useRef()
 
-  
   function enviarDados(event) {
     event.preventDefault()
     api.post('/contatos', {
